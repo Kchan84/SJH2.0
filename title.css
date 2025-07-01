@@ -6,3 +6,20 @@ a:visited{
     color:RED;
 }
 /*<h1 #The-title style="font-family: 'Arial',sans-serif;"> Data Privacy<h1/>*/
+#dataImg{
+    display: flex;
+    justify-content: center;
+
+}
+#main{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid black;
+
+}
+.firstColumn{
+    border: 1px solid black;
+}
+.secondColumn{
+    border: 1px solid black;
+}
