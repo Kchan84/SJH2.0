@@ -1,16 +1,4 @@
-//buttons for cat images
-// const nextButton = document.getElementById("nextImg");
-// const prevButton = document.getElementById("prevImg");
 
-//dict of cat images 
-//making a slider for images, each cat has a story abt data privacy
-//link to w3schools: https://www.w3schools.com/howto/howto_js_slideshow.asp
-// const catImgs = {
-//   pawCat: "pawCat",
-//   weddingCat: "weddingCat",
-//   imposterCat: "imposterCat",
-//   glassesCat: "glassesCat",
-// }
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -40,3 +28,24 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// function AddFakeAnswer() {
+//   const fakeAnswer = document.createElement("div");
+//   fakeAnswer.className = "fake-answer";
+//   fakeAnswer.textContent = "This is a fake answer.";
+//   document.getElementById("fakeAnswersContainer").appendChild(fakeAnswer);
+
+// }
+// const submit= document.getElementById("submitButton");
+// submit.addEventListener("click", function(event) {
+//   event.preventDefault(); // Prevent form submission
+//   const question = document.getElementById("Question").value;
+//   if (question) {
+//     alert("Your question has been submitted: " + question);
+//     AddFakeAnswer(); // Call the function to add a fake answer
+//   } else {
+//     alert("tricked you.");
+//   }
+// });
+
+// trying to trick people by not answering their question, but instead adding a fake answer.
