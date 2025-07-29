@@ -10,6 +10,23 @@
   <h1 id="The-title"> Data Privacy: How to stay protected? </h1> 
   
   <img id ="dataImg"src="dataPriv.png" alt="A description of the image" width="520" style="vertical-align:bottom"> 
+  <button id="toggleButton">light/dark mode</button>
+  <script>
+    const toggleButton = document.getElementById('toggleButton');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      toggleButton.textContent = body.classList.contains('dark-mode') ? 'light mode' : 'dark mode';
+    });
+    document.getElementbyId('toggleButton').addEventListener('click', function() {
+      document.getElementById('body').style.backgroundColor = "black" ;
+    
+    });
+  </script>
+  
+
+
   <h3> What is  <a href="https://www.ibm.com/think/topics/data-privacy">data privacy</a>?
 </h3>
 
@@ -95,7 +112,7 @@
   <form>
     <label for="Question"></label>Questions?:</label><br>
     <input type="text" id="Question" name="Question">
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" id="submitButton">
   </form>
 
   <script type="text/javascript" src="title.js"></script>
