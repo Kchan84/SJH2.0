@@ -47,14 +47,56 @@
   </div>
 
   <h3>
-    What if Your Data Was Already Leaked?  
+    Real Life Privacy Victims
   </h3>
+<!-- 
+  //empty divs to put the slider of cat images into -->
+  <div class="cat-pics">
 
-  //empty divs to put the slider of cat images into
-  <div id="cat-pics"></div>
+    <div class="slide fade">
+      <div class="number">1 / 5</div>
+      <img src="pawCat.jpg" style="width:100%">
+      <div class="text">Milo downloaded an app and jumped in without reading the permissions. Days later, he started getting targeted ads, weird emails, and fake calls pretending to be from Milo's bank. Milo realized it was because of the app so he quickly deleted it and limited permissions on all the apps on his phone.</div>
+    </div>
 
-  <button id="nextImg">Next</button>
-  <button id="prevImg">Previous</button>
+    <div class="slide fade">
+      <div class="number">2 / 5</div>
+      <img src="weddingCat.jpg" style="width:100%">
+      <div class="text">Whiskers and Luna’s wedding was perfect until Luna’s phone got hacked, and their photos were almost leaked. She had thought she could win an iPhone by clicking on a link, but that wasn’t real. Panicking, she went to Whiskers, who quickly changed her account password and resolved the issue.</div>
+    </div>
+
+    <div class="slide fade">
+      <div class="number">3 / 5</div>
+      <img src="imposterCat.jpg" style="width:100%">
+      <div class="text">Theodore was receiving text messages from his bank saying his there was a big transaction, however, this was a lie. The text proceeded to ask for personal information to that they could get into his account and try to take his money!</div>
+    </div>
+
+    <div class="slide fade">
+      <div class="number">4 / 5</div>
+      <img src="glassesCat.jpg" style="width:100%">
+      <div class="text">Theodore was walking through town when he got a notification: "Congratulations, Theodore! You’ve won 100 pounds of tuna! Enter your social security number to secure your prize!" Theodore knew that prizes would never ask for an SNN, so he ignored the message and continued to stroll down the street to grab his coffee.</div>
+    </div>
+
+    <div class="slide fade">
+      <div class="number">5 / 5</div>
+      <img src="Ajanicat.jpg" style="width:100%">
+      <div class="text">Luna used a smart litterbox that tracked bathroom activity. The app collected way more than needed. Her habits, home address, Wi-Fi info all got hacked. Luna’s data was part of a public breach. Her owner read the privacy policy, filed a complaint under GDPR, and demanded data deletion. They replaced the litterbox with a basic model and joined a class action lawsuit. </div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <!-- <button id="nextImg">Next</button>
+  <button id="prevImg">Previous</button> -->
+
+  <form>
+    <label for="Question"></label>Questions?:</label><br>
+    <input type="text" id="Question" name="Question">
+    <input type="submit" value="Submit">
+  </form>
 
   <script type="text/javascript" src="title.js"></script>
 </body>
