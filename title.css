@@ -48,6 +48,7 @@ a:visited{
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .firstColumn p, .secondColumn p {
