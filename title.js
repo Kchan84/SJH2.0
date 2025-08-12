@@ -29,6 +29,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function submitFunc() {
+  const form = document.getElementsByID("form");
+  const text = document.getElementById("text");
+
+}
 // function AddFakeAnswer() {
 //   const fakeAnswer = document.createElement("div");
 //   fakeAnswer.className = "fake-answer";

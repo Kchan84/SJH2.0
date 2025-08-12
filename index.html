@@ -109,11 +109,27 @@
   <!-- <button id="nextImg">Next</button>
   <button id="prevImg">Previous</button> -->
 
-  <form>
+  <!-- <form id="form", onsubmit=submitFunc()>
     <label for="Question"></label>Questions?:</label><br>
     <input type="text" id="Question" name="Question">
     <input type="submit" value="Submit" id="submitButton">
-  </form>
+  </form> -->
+
+  <form
+  action="https://formspree.io/f/myzponow"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <input name="message"></input>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 
   <script type="text/javascript" src="title.js"></script>
 </body>
