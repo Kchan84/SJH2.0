@@ -9,7 +9,7 @@ body{
     flex-direction: column;
 
 }
-p, li, .text { 
+p, li, .text{ 
   font-family : 'Lucida Console', monospace;
   font-size: 18px;
   color : #7f7f7f;
