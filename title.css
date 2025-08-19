@@ -215,4 +215,13 @@ body {
   .desktop {
       display: none;
   }
+
+  .sendStuff{
+     display: block;
+     margin: 0 auto;
+     margin-left: 20px;
+     
+     
+     
+  }
 }
