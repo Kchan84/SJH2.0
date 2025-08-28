@@ -135,91 +135,64 @@ body {
   color: white;
 }
 
-@media screen and (min-width: 450px) {
+/* dropdown collapsed on phones */
+.dropdown-content {
+  display: block;
+  padding: 8px 0;
+}
+
+/* Style the toggle button */
+.dropdown-toggle , .sendStuff{
+  width: fit-content;
+  background: #e0e0e0;
+  border: none;
+  text-align: middle;
+  font-size: 1.1rem;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Lucida Console', monospace;
+  border-radius: 6px;
+}
+
+.toggleButton{
+  width: fit-content;
+  background: #e0e0e0;
+  border: none;
+  text-align: middle;
+  font-size: 1.1rem;
+  padding: 10px;
+  cursor: pointer;
+  font-family: 'Lucida Console', monospace;
+  border-radius: 6px;
+}
+
+.dropdown-toggle {
+  display: none;
+}
+
+/* dropdown will appear for tablet and phone screens */
+@media screen and (max-width: 480px) {
   body {
-      background-color: rgb(173, 180, 208);
-      margin: 0;
+    font-size: 50px;
+    background-color: rgb(173, 180, 208);
+    margin: 0;
+}
+  .dropdown-toggle {
+    display: block; /* show the button on phones */
   }
-
-  nav {
-      background-color: rgb(166, 212, 195);
-      display: flex;
-      justify-content: space-around;
+  .dropdown-content {
+    display: none !important; /* hidden by default on phones */
   }
-
-  a {
-      margin: 5px;
-  }
-
-  img {
-      display: block;
-      margin: 5vh auto;
-      width: 50vw;
-  }
-
-  .mobile {
-      display: none;
+  .dropdown.open .dropdown-content {
+    display: block !important;
   }
 }
 
+/* Desktop ≥ 2000x (coherent code &  adding more features in the furture) */
 @media screen and (max-width: 2000px) {
   body {
-      background-color: rgb(173, 180, 208);
-      margin: 0;
+    font-size: 18px; 
+    background-color: rgb(173, 180, 208);
+    margin: 0;  
   }
-
-  a {
-      margin: 5px;
-  }
-
-  img {
-      display: block;
-      margin: 5vh auto;
-      width: 100vw;
-  }
-
-  /* Style the button that is used to open and close the collapsible content */
-  .collapsible {
-      background-color: #eee;
-      color: #444;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-  }
-
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-      background-color: #ccc;
-  }
-
-  /* Style the collapsible content. Note: hidden by default */
-  .hidden {
-      background-color: rgb(166, 212, 195);
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-  }
-
-  .visible {
-      background-color: rgb(166, 212, 195);
-      flex-direction: column;
-      padding: 0 18px;
-      display: flex;
-      overflow: hidden;
-  }
-
-  .desktop {
-      display: none;
-  }
- form {
-     text-align:center;
-  }
-  .sendStuff{
-     display: inline-block;
-  }
-  
 }

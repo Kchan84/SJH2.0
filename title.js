@@ -1,5 +1,3 @@
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -34,6 +32,7 @@ function submitFunc() {
   const text = document.getElementById("text");
 
 }
+
 // function AddFakeAnswer() {
 //   const fakeAnswer = document.createElement("div");
 //   fakeAnswer.className = "fake-answer";
